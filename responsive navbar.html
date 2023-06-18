@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            nav{
+                background: rgb(30, 157, 253, 0);
+                height: 80px;
+                width: 100%;
+                padding-top: 20px;
+            }
+            
+            nav ul{
+                float: right;
+                margin-right: 50px;
+            }
+            nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a{
+                color: aliceblue;
+                font-size: 16px;
+                font-weight: 480;
+                text-transform: uppercase;
+                padding: 7px 13px;
+                border-radius: 3px;
+            }
+            a.active,a:hover{
+                background: #9ECB3A;
+                color: #fff;
+                transition: 0.5s;
+            }
+            .checkbtn{
+                font-size: 25px;
+                color: aliceblue;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                margin-top: -10px;
+                cursor: pointer;
+                display: none;
+            }
+            #check{
+                display: none;
+            }
+            .navlogo{
+                width: 230px;
+                height: 63px;
+                margin: 10px 0 15px 60px;
+            }
+            div.experience-img{
+                padding: 15px 25px 0 50px; 
+                width: 50%; float: left;
+                }
+            div.experience-text{
+                padding: 0 25px 0 50px; 
+                float: left; 
+                width: 50%;
+                }
+            
+            @media (max-width: 900px){
+                div.experience-img{
+                    width: 100%;
+                }
+                div.experience-text{
+                    width: 100%;
+                }
+                .checkbtn{
+                    display: block;
+                }
+                ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #2c3e50;
+                    
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+
+                }
+                nav ul li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                    
+                    
+                }
+                nav ul li a{
+                    font-size: 20px;
+                    padding: 7px 50px;
+
+                }
+                #check:checked ~ ul{
+                    left: 0;
+                }
+                .navlogo{
+                width: 150px;
+                height: 40px;
+                
+                }
+                
+           }
+           .header{
+            background: url(assets/home-banner-img.jpg) no-repeat;
+            background-size: cover;
+            height: calc(100vh)
+           }
+           .heading{
+            font-size: 40px;
+            font-weight: 600;
+            line-height: normal;
+           }
+           .sec2{
+            margin: 50px 100px 50px 100px;
+            text-align: center;
+            border: #2c3e50 solid 5px;
+           }
+          
+          
+        </style>
+        <script src="https://kit.fontawesome.com/813223e43a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <section class="header">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="" class="logo"><img class="navlogo" src="assets/helio logo.png"></label>
+                <ul>
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">feedback</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="sec2">
+            <span class="heading">Go Solar with <span style="color: #9ECB3A;">Helio GreenTech</span></span>
+            <p style="margin-top: 30px;">
+                Solar systems can be an excellent way to utilize clean energy and save. 
+                Helio GreenTech is a locally owned and operated solar installer in Kansas City. 
+                We offer industry leading solar panels & installation with exceptional service. 
+                Our solar company  can help with residential solar installation, commercial solar installation, 
+                battery and generator installation so that you can enjoy a fantastic new solar system.
+            </p>
+        </section>
+        <div style=" width: 100%; background: #2d96ff; margin: 20px; border: #2c3e50 2px solid;">
+            <div class="experience-img" style="display: inline-block;" >
+                <img style="width: 100%;" src="assets/Screenshot (13).png">
+            
+            </div>
+            <div class="experience-text" style="display: inline-block;" >
+                <span class="heading">Our <span style="color: #9ECB3A;">Experience</span></span>
+                
+                    Ranked Best of KC as Kansas City’s best solar company in 2022.  
+                    Leadership with over 15 years of experience in installing solar. 
+                    We take an educational approach to solar so before you move forward 
+                    you know that you're making the right decision.  
+                    You can feel confident you are making the right decision when you choose 
+                    to work with Helio GreenTech.  Helio GreenTech was founded in 2019 by an experienced 
+                    solar team who believes in making a difference in the world, helping the 
+                    renewable energy industry grow, and empowering our customers, teams, and 
+                    communities to a more sustainable future. We know that your install will be done right, 
+                    and go quickly thanks to our NABCEP certified installers, professional team, 
+                    and experienced leadership.
+                    <br> <span style="font-weight: 600;">Experience and Expertise:</span> 
+                    Helio GreenTech was founded by leadership that has been in the 
+                    solar industry since 2008. With a proven track record of experience and expertise in the 
+                    solar industry, and a history of successful installations and satisfied customers in the 
+                    Kansas City area. We have a team of skilled professionals who are knowledgeable about solar 
+                    technology, local regulations, and best practices for solar panel installation.
+                
+                <button style="background: #9ECB3A; padding: 10px 20px; margin-top: 30px; 
+                border: none; border-radius: 5px; font-size: 018px; font-weight: 500;">Our Reviews</button>
+            </div>
+                
+        </div>
+        <div style="width: 100%; margin: 20px;">
+            
+            <div class="experience-text" style="padding-top: 100px; display: inline-block;">
+                <span class="heading"> <span style="color: #9ECB3A;">Solar Services</span>Near 
+                    Kansas City, MO </span>
+                
+                    At Helio GreenTech, we’re ready to make sure clients near Kansas City, MO, get the 
+                    fantastic solar services they deserve. We install sleek, efficient, top-of-the-line 
+                    systems; we primarily use Enphase inverters and VSUN solar as a brand for our solar panels. 
+                    We also use top-quality panels such as Jinko Solar, Silfab Solar, Axeitec Solar Panels, 
+                    and Hanwha Q Cells. Our energy consultants will help recommend the best solar panels for 
+                    your project, helping you reach your goals. We curate the best selection of panels and components 
+                    from brands you know and trust. We select the best equipment for your job So that you know you 
+                    system will be sleek and modern with Triple Black Solar panels, 25 Year Warranty, life time 
+                    monitoring, and industry leading degradation rates.
+                    Our goal is to make sure that our clients get quality workmanship and that they’re well-educated 
+                    on what having a solar system means. Just reach out to us to request a free estimate and learn more.
+                    Quality Products and Services: Helio GreenTech provides high-quality solar panels, 
+                    inverters, and other equipment that is reliable and durable, with warranties and 
+                    performance guarantees that are best in class industry wide. “They also offer comprehensive 
+                    services, such as system design, installation, maintenance, and monitoring, to ensure that 
+                    their customers' solar systems are operating efficiently and effectively.” - Customer Satisfaction 
+                    Survey from KC’s Best 2022.
+                
+                <button style="background: #9ECB3A; padding: 10px 20px; margin-top: 30px; border: none; border-radius: 5px; font-size: 018px; font-weight: 500;">Our Reviews</button>
+            </div>
+            <div class="experience-img" style="display: inline-block; padding-top: 100px;">
+                <img style="width: 100%;" src="assets/Screenshot (13).png">
+                
+            </div>    
+        </div>
+       
+    </body>
+</html>

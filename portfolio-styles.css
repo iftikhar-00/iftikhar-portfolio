@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #666;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div ul li{
+    margin-right: 10px;
+    padding: 1px 05px;
+    
+}
+nav-menu-hover:hover{
+    color: #000;
+    background-color: #FFD000;
+}
+div ul li:hover a{
+    color: #000;
+    background-color: #FFD000;
+}
+.logo-name{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.logoo-img{
+
+    width: 60px;
+}
+
+
+.nav-link{
+    color: white;
+    font-weight: 600;
+    
+}
+
+.nav-link:hover{
+    color: black;
+    
+
+        
+        
+        border-radius: 0;
+}
+.bck-color{
+    background-color: #FFD000;
+    border-radius: 0;  
+}
+.bck-color a{
+    color: #000;
+}
+.home-page-heading{
+    color: white;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;   
+}
+.home-heading{
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.home-page-heading h1{
+    font-weight: 600;
+    font-size: 80px;
+    
+    word-spacing: 15px;
+}
+.home-heading h1{
+    font-weight: 600;
+    font-size: 40px;
+    
+    word-spacing: 15px;
+}
+.home-page-heading p{
+    font-size: 20px;
+    font-weight: 350;
+}
+.home-heading p{
+    font-size: 18px;
+    font-weight: 350;
+}
+.home-page-heading img{
+    width: 15%;
+}
+.display-box{
+    
+    background-color: #555555;
+    padding-top: 100px;
+}
+
+.description-txt{
+    margin: auto; width: fit-content; border-bottom: #fff 2px solid;
+}
+.hover-effect:hover{
+    cursor: pointer;
+    border: #FFD000 2px solid;
+    .text-hover{
+        color: #FFD000;
+    }
+    .description-txt{
+        border-bottom: #FFD000 2px solid; 
+    }
+}
+.icon-style{
+    font-size: 20px; margin-left: 20px;
+}
+.footer-line{
+    margin-top: 100px; border-top: #FFD000 2px solid;
+    color: #fff;
+}
+.footer-line>.footer-row div span{
+    color: #bbbbbb;
+}
+.footer-row{
+    align-items: center;
+}
+.footer-line>.footer-row div i:hover{
+    color: #FFD000;
+    cursor: pointer;
+}
+.certification-description{
+    list-style-type: none;
+    
+    color: #fff;
+}
+.centralize-certify{
+    margin: auto;
+}
+.centralize-certify:hover{
+    .certify-img{
+        border: #FFD000 5px solid;
+    }
+    .certify-heading{
+        color: #FFD000;
+    }
+    cursor: pointer;
+}
+.certify-img{
+    width: 80%;
+}
+.certification-description dl dd{
+    margin-bottom: 0;
+}
+#margin-up{
+    margin-top: 60px;
+}
+.centralize-work{
+    margin: auto;
+}
+.work-img{
+    width: 100%;
+}
+.div-work-img-pad{
+    
+    padding: 0;
+    position: relative;
+}
+.img-wrap-div{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.work-description-overlay{
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    transition: 0.5s ease; 
+}
+
+.overlay-content{
+    margin-top: 30%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.overlay-content span{
+    line-height: normal;
+}
+.description-txt-heading{
+    margin: auto; width: 50%; border-bottom: #ffd000 2px solid;
+    color: #FFD000;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.div-work-img-pad:hover .work-description-overlay{
+    height: 100%;
+    
+    cursor: pointer;
+}
+.about-img{
+    width: 20%;
+    margin-bottom: 40px;
+}
+.about-div-wrap{
+    margin-bottom: 30px;
+}
+.about-div-heading{
+    background-color: #FFD000; color: #333; text-align: center; padding: 10px 3px 3px 3px; 
+    
+}
+.contact-div-heading{
+    background-color: #FFD000; color: #333; text-align: center; padding: 10px 3px 3px 3px; 
+}
+.contact-div-heading h5{
+    font-weight: 700;
+}
+.about-div-heading h5{
+    font-weight: 650;
+}
+.about-list{
+    padding: 30px; background-color: #333;
+    color: white;
+    min-height: 367px;
+}
+.about-list dl dd{
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.about-list dl dt{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.main-display-img{
+    vertical-align: middle; 
+    width: 15vw;
+}
+.main-display-banner{
+    text-align: center;  
+    line-height: calc(100vh - 86px); 
+    height: calc(100vh - 86px); 
+    background-image: radial-gradient(circle,#cfa900, #333);
+}
+.design-skills-margin{
+    margin-bottom: 5px !important;
+}
+.contact-div-wrap{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.margin-btm{
+    margin-bottom: 20px;
+}
+.contact-list{
+    padding: 30px; background-color: #333;
+    color: white;
+    min-height: 367px;
+}
+.margin-btm a{
+    text-decoration: none;
+    color: white;
+}
+.hover-cls:hover a{
+    color: #FFD000;
+    cursor: pointer;
+}
+.img-container{
+    margin: auto;
+    text-align: center;
+}
+.img-container img{
+    width: 60%;
+}
+.download-btn{
+    height: 50px;
+}
+.download-btn a{
+    text-decoration: none;
+    color: white;
+}
+.download-btn a:hover{
+    color: #FFD000;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+/* ============= media queries =======================*/
+/* ============= media queries =======================*/
+
+@media only screen and (max-width: 1000px) {
+
+    .logo-name{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    div ul li{
+        font-size: 12px;
+        margin-right: 2px;
+        padding: 0 5px;
+    }
+    .home-page-heading img{
+        width: 15%;
+    }
+    .home-page-heading h1{
+        font-size: 60px;
+    }
+    .overlay-content{
+        margin-top: 35%;
+    }
+    .about-list{
+        min-height: 478px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .logo-name{
+        display: none;
+    }
+    .logoo-img{
+
+        width: 40px;
+    }
+    .home-page-heading img{
+        width: 20%;
+    }
+    .home-page-heading h1{
+        font-size: 50px;
+    }
+    .home-page-heading p{
+        font-size: 16px;
+    }
+    .overlay-content{
+        margin-top: 20%;
+    }
+    .main-display-banner{
+        
+        line-height: calc(100vh - 66px); 
+        height: calc(100vh - 66px); 
+       
+    }
+    .about-list{
+        min-height: 562px;
+    }
+}
+@media only screen and (max-width: 768px){
+    
+    .home-page-heading h1{
+        font-size: 40px;
+    }
+    .description-txt > span h4{
+        font-size: 22px;
+    }
+    .footer-line>.footer-row div{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .icon-div{
+        width: fit-content;
+        margin: auto;
+    }
+    .certify-img{
+        width: 100%;
+    }
+    .certification-description{
+        margin-top: 25px;
+        
+    }
+    .certification-description dl dd{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    #margin-up{
+        margin-top: 70px;
+    }
+    .work-img{
+        width: 100%;
+    }
+    .overlay-content{
+        margin-top: 40%;
+    }
+    .sm-scr-margin-up{
+        margin-top: 60px;
+    }
+    .main-display-img{
+        width: 30vw;
+    }
+    .main-display-banner{
+        
+        line-height: calc(100vh - 66px); 
+        height: calc(100vh - 66px); 
+       
+    }
+    .img-container img{
+        width: 80%;
+    }
+    
+}
+@media (max-width: 575px) {
+    .logoo-img{
+        margin-left: 20px;
+    }
+    
+    div ul{
+        position:fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .nav-margin-top{
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+    .nav-margin-top li{
+        width: 100%;
+    }
+    .nav-item{
+        margin-top: 10px;
+    }
+    .home-page-heading h1{
+        font-size: 30px;
+    }
+    .home-page-heading p{
+        font-size: 14px;
+    }
+    .home-page-heading{
+        padding-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .home-heading h1{
+        font-size: 22px;
+        word-spacing: normal;
+    }
+    .home-heading p{
+        font-size: 14px;
+    }
+    .home-heading{
+        padding-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .home-page-heading img{
+        width: 100px;
+    }
+    .description-txt > span h4{
+        font-size: 16px;
+    }
+    #sm-scr-pad{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-top: 0 !important;
+    }
+    .footer-line>.footer-row div{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .icon-div{
+        width: fit-content;
+        margin: auto;
+    }
+    .copy-right{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .icon-style{
+        font-size: 20px;
+        margin-left: 0;
+        width: 50px;
+    }
+    .certify-img{
+        width: 100%;
+    }
+    .certification-description{
+        margin-top: 25px;
+        
+    }
+    .certification-description dl dd{
+        font-size: 13px;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+    .certify-heading{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .work-img-margin{
+        margin-top: 70px;
+    }
+    #margin-up{
+        margin-top: 50px;
+    }
+    .work-img{
+        width: 100%;
+    }
+    .description-txt-heading{
+        width: 90%;
+    }
+    .img-wrap-div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .overlay-content{
+        margin-top: 20%;
+    }
+    .main-display-img{
+        width: 40vw;
+    }
+    .about-img{
+        width: 40%;
+    }
+    .about-list{
+        min-height: auto;
+    }
+    .contact-list{
+        background-color: #333;
+        color: white;
+        min-height: auto;
+        padding: 30px 10px 30px 10px;
+    }
+    .contact-div-wrap{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .margin-btm span{
+        font-size: 12px;
+    }
+    .contact-div-heading h5{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .img-container img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .description-txt-heading span h5{
+        font-size: 16px;
+    }
+    .overlay-content span{
+        font-size: 14px;
+    }
+    .overlay-content{
+        margin-top: 10%;
+    }
+}
